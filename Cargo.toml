@@ -1,0 +1,18 @@
+[package]
+name = "tatoebars"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+reqwest = { version = "0.11.20", features = ["json"] }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_url_params = "0.2.1"
+tokio = { version = "1.32.0", features = ["macros"] }
+
+
+[lib]
+name = "tatoebars"
+path = "lib.rs"
